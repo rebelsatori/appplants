@@ -1,0 +1,18 @@
+<h1>Plant: <%= @plant.name %></h1>
+
+<p>seed condition: <%= @plant.seed_condition %>
+<p>soil ph: <%= @plant.soil_ph %>
+<p>total dissolved solids: <%= @plant.total_dissolved_solids %>
+<p>nutrients: <%= @plant.nutrients %>
+<p>watering schedule: <%= @plant.watering_schedule %>
+<p>temperature: <%= @plant.temperature %>
+<p>humidity: <%= @plant.humidity %>
+<p>light condition: <%= @plant.light_condition %>
+<p>season: <%= @plant.season %>
+<p>soil area: <%= @plant.soil_area %>
+<p>maximum reported yield: <%= @plant.maximum_reported_yield %></p>
+<p>user: <%= @username %></p>
+<br><br>
+<%= button_to "Back", root_path, method: :get %>
+
+

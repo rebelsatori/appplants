@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  seed_condition: MyString
+  soil_ph: 1.5
+  total_dissolved_solids: 1.5
+  nutrients: MyString
+  watering_schedule: MyString
+  temperature: 1.5
+  humidity: 1.5
+  light_condition: MyString
+  season: MyString
+  soil_area: MyString
+  maximum_reported_yield: MyString
+
+two:
+  name: MyString
+  seed_condition: MyString
+  soil_ph: 1.5
+  total_dissolved_solids: 1.5
+  nutrients: MyString
+  watering_schedule: MyString
+  temperature: 1.5
+  humidity: 1.5
+  light_condition: MyString
+  season: MyString
+  soil_area: MyString
+  maximum_reported_yield: MyString

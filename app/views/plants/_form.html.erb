@@ -1,0 +1,73 @@
+<% if @plant.errors.any? %>
+  <h2>There were errors saving your plant</h2>
+  <ul>
+    <% @plant.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @plant do |f| %>
+  <fieldset>
+    <div class='fields'>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div class='fields'>
+      <%= f.label :seed_condition %>
+      <%= f.text_field :seed_condition %>
+    </div>
+    <div class='fields'>
+      <%= f.label :soil_ph %>
+      <%= f.text_field :soil_ph %>
+    </div>
+    <div class='fields'>
+      <%= f.label :total_dissolved_solids %>
+      <%= f.text_field :total_dissolved_solids %>
+    </div>
+    <div class='fields'>
+      <%= f.label :nutrients %>
+      <%= f.text_field :nutrients %>
+    </div>
+    <div class='fields'>
+      <%= f.label :watering_schedule %>
+      <%= f.text_field :watering_schedule %>
+    </div>
+    <div class='fields'>
+      <%= f.label :temperature %>
+      <%= f.text_field :temperature %>
+    </div>
+    <div class='fields'>
+      <%= f.label :humidity %>
+      <%= f.text_field :humidity %>
+      </div>
+    <div class='fields'>
+      <%= f.label :light_condition %>
+      <%= f.text_field :light_condition %>
+    </div>
+    <div class='fields'>
+      <%= f.label :season %>
+      <%= f.text_field :season %>
+      </div>
+      
+    <div class='fields'>
+      <%= f.label :soil_area %>
+      <%= f.text_field :soil_area %>
+    </div>   
+ 
+    <div class='fields'>
+      <%= f.label :maximum_reported_yield %>
+      <%= f.text_field :maximum_reported_yield %>
+    </div>
+
+    <div class='fields'>
+      User:
+      <%= @username %>
+    </div>
+
+
+  </fieldset>
+  <%= f.submit %>
+<% end %>
+
+<br/>

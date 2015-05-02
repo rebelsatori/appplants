@@ -1,0 +1,24 @@
+<h1>Leafly</h1>
+
+<%= link_to image_tag("http://imagizer.imageshack.us/v2/640x480q90/661/wOZwth.jpg"), "http://www.imageshack.com" %>
+
+<p><%= link_to "About Us", "plants/about" %>
+
+<ul>
+<% @plants.each do |plant| %>
+<li><%= link_to plant.name, plant %> <%= link_to "Edit", edit_plant_path(plant) %> </li> 
+<% end%>
+</ul>
+
+<p>Reddit Gardening Articles</p>
+
+<ul>
+<% @stories[0..3].each do |key,val| %>
+<li> <a href='<%= key["data"]["url"] %>' > <%= key["data"]["title"] %> </a> </li>
+<% end %>
+</ul>
+
+<br>
+
+<%= button_to "Add Plant", new_plant_path, method: :get %>
+
